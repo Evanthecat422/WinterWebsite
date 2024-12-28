@@ -42,7 +42,47 @@
     	border: solid #2d516e 3px;   
     }
 
-
+    .snowflake {
+    	position: absolute;
+        font-size: 30px;
+        top: -30px;
+        animation: fall linear infinite;        
+    }
+	
+    @keyframes fall {
+    	0% {
+        	transform: translateY(0)
+        }
+        100% {
+        	transform: translateY(100vh)
+        }
+    }
+    
+    .snowflake:nth-child(1) {
+    	left: 10%;
+        animation-duration: 7s;
+        
+    }
+ .snowflake:nth-child(2) {
+    	left: 30%;
+        animation-duration: 5s;
+        
+    }
+ .snowflake:nth-child(3) {
+    	left: 50%;
+        animation-duration: 3.5s;
+        
+    }
+ .snowflake:nth-child(4) {
+    	left: 70%;
+        animation-duration: 4s;
+        
+    }
+ .snowflake:nth-child(5) {
+    	left: 90%;
+        animation-duration: 5s;
+        
+    }
     .container {
     	position: relative;
         text-align: center;'
@@ -90,6 +130,7 @@
   		transform: translate(-50%, -50%);
   		text-align: center;
 	}
+    
 
 
 
@@ -98,6 +139,12 @@
 </head>
 
 <body>
+
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
+<div class="snowflake">❄️</div>
 
 <div class="container">
 	<img src="https://images.unsplash.com/photo-1541781774459-			bb2af2f05b55?fm=jpg&q=60&w=3000&ixlib=rb-							4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -149,7 +196,7 @@
   <br>
 <p>---------------------------------------------------------------------------------------------------------------------</p>    
 <br>
-<h3>BOOOOOKKSSS (READ THEM):</h3>
+<h3>BOOOOOKKSSS:</h3>
 <img src="https://media.tenor.com/KyLkCcKPaa8AAAAM/cat-reading.gif">
 <br>
 <br>
