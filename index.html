@@ -22,6 +22,8 @@
     	font-family: Times New Roman;
     }
     
+    
+    
     button {
     	width: 170px;
         height: 25px;
@@ -101,8 +103,6 @@
     }
     
     img {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
     border-radius: 17.5%;
 	}
     
@@ -135,15 +135,61 @@
   		text-align: center;
 	}
     
+    .tab {
+  overflow: hidden;
+  border:
+}
 
+.tab button {
+  background-color: #d1fdff;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
 
+  transition: 0.3s;
+  font-size: 12px;
+}
 
+.tab button:hover {
+  background-color: #76a9b5;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  
+.wrapper.two {
+    background-color: #2c0101;
+    font-size: 6rem;
+    font-family: sans-serif;
+}
+.neon h3 {
+    margin: 1rem auto;
+    animation: neon 1s ease infinite;
+}
+  
+    
 </style>
 
 </head>
 
 <body>
 
+
+<div class="tab">
+  <button class="tablinks" onclick="changeTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="changeTab(event, 'Books')">Books</button>
+  <button class="tablinks" onclick="changeTab(event, 'Food')">Food</button>
+</div>
+
+
+<div id="Home" class="tabcontent">
 <div class="snowflake">❄️</div>
 <div class="snowflake">❄️</div>
 <div class="snowflake">❄️</div>
@@ -158,7 +204,7 @@
     <div class="words"><h1>IT'S COWWLLLDDDD ^╥⩊╥^</h1></div>
   </div>
 </div>
-
+<h3>^ hover ^</h3>
 <h2>While we can't stay under the blankets the entire winter, there are still some fun ways to keep warm ! <3</h2>
 
 <br>
@@ -222,10 +268,159 @@
 <p>⭐⭐⭐⭐⭐</p>
 
 <br>
+<p>----------------------------------------------------------------------------------------------------------------------</p>
+<br>
+<div class="wrapper two">
+        <div class="neon">
+            <h3>About Me</h3>
+        </div>
+    </div>
+<p>HIIIII!!!! I'm in Grade Six at Zion Heights Middle School and have a dangerous addiction to reading, am a cat person, and I aspire to win the Nobel Prize in Literature (lofty goals ;3) and also to publish a book before I turn 20. In my spare time, I scroll through columns and columns of cat photos, read tons of books, and... yeah thats pretty much it.</p>
 
 <br>
 <h1>THANKS FOR LOOKING AT MY WEBSITE!!!</h1>
 <h2>More will be added soon~</h2>
+</div>
+
+<div id="Books" class="tabcontent">
+  <div class="container">
+	<img src="https://i.pinimg.com/originals/81/a2/71/81a27177a0dfecfe9fdbb0a4142406dd.jpg"
+    style="width:90%;" "height:30%;"> 
+    <div class="centered"></div>
+    <div class="overlay">
+    <div class="words"><h1>What I'm Reading >w<</h1></div>
+  </div>
+</div>
+<h2>I'm an avid reader, so I've been reading a wide variety of books this break!!</h2>
+<h3>Novels</h3>
+<img src="https://www.madeleinelengle.com/wp-content/uploads/2017/10/WIT-Trade-Paperback.jpg"style="width:20%;">
+
+<h4>A Wrinkle in Time by Madeleine L'Engle</h4>
+<p>Very good book but sometimes hard to follow</p>
+<p>⭐⭐⭐⭐</p>
+
+<br>
+<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1626710416l/58446227.jpg" style="width:20%;">
+
+<h4>Sea of Tranquility by Emily St. John Mandel</h4>
+<p>Great science fiction book~</p>
+<p>⭐⭐⭐⭐⭐</p>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/en/e/e6/They_Do_it_With_Mirrors_First_Edition_Cover_1952.jpg" style="width:20%">
+<h4>They Do It With Mirrors by Agatha Christie</h4>
+<p>Like all Agatha Christie books, it's a great murder mystery.</p>
+<p>⭐⭐⭐⭐⭐</p>
+<br>
+<h3>Graphic Novels + Manga</h3>
+<br>
+<img src="https://m.media-amazon.com/images/I/81SMQl0-nRL._AC_UF1000,1000_QL80_.jpg" style="width:20%">
+<h4>7 Good Reasons Not To Grow Up by Jimmy Gownley</h4>
+<p>A good book, but sometimes a little weird.</p>
+<p>⭐⭐⭐⭐</p>
+<br>
+<img src="https://m.media-amazon.com/images/I/81Vgzv1stnL._UF350,350_QL50_.jpg" style= "width: 20%">
+<h4>A Man and His Cat (Vol. 12) by Umi Sakurai</h4>
+<p>A super cute slice-of-life manga about an old man who befriends a neglected cat. Read the other books in the series first tho.</p>
+<p>⭐⭐⭐⭐⭐</p>
+<br>
+<h3>Nonfiction / Informational Books</h3>
+<br>
+<img src="https://m.media-amazon.com/images/I/71Eas8rGiVL._AC_UF1000,1000_QL80_.jpg" style="width: 20%">
+<h4>The Complete Guide to Nature Photography by Sean Arbabi</h4>
+<p>A reallllyyy informational book about photography, but it can get lengthy (for a noob like me!) >w<</p>
+<p>⭐⭐⭐⭐</p>
+</div>
+
+<div id="Food" class="tabcontent">
+  <div class="container">
+	<img src="https://www.pawtracks.com/wp-content/uploads/sites/2/2024/09/Cat-sniffing-bread.jpg?resize=1000%2C600&p=1"
+    style="width:90%;" "height:30%;"> 
+    <div class="centered"></div>
+    <div class="overlay">
+    <div class="words"><h1>TIME TO EAATTTTTT</h1></div>
+  </div>
+</div>
+<h2>Here are some yummy recipes you can try out (or tell your parents to try out) over the winter break - or anytime!</h2>
+
+<h3>Soups</h3>
+<p>On the first day of winter break, my mom tried out this cheddar and broccoli soup that was really tasty!!</p>
+<img src="https://cdn.loveandlemons.com/wp-content/uploads/2022/11/broccoli-cheddar-soup.jpg" style= "width:20%">
+<br>
+<a href="https://www.loveandlemons.com/broccoli-cheddar-soup/">
+    	<button>Love and Lemons</button>
+</a>
+        
+<h4>HOT CHOCOLATE ☕</h4>
+<p>Hot chocolate is, by definition *adjusts glasses* liquid happiness with marshmallows </p>
+<h4>Here are some SLAY hot chocolate recipes!!!!</h4>
+  <a href="https://celebratingsweets.com/homemade-hot-chocolate/">
+    	<button>Celebrating Sweets</button>
+    </a>
+    <br>
+ <a href="https://downshiftology.com/recipes/best-hot-chocolate/">
+    	<button>Downshiftology</button>
+    </a>
+    <br>
+ <a href="https://www.fifteenspatulas.com/best-hot-chocolate-from-			scratch/">
+    	<button>Fifteen Spatulas</button>
+    </a>
+
+	<br>
+    <br>
+    
+<h4>COOKIES 🍪</h4>
+<p>I understand why Cookie Monster has an addiction >w<</p>
+<h4>Eat cookie. Here recipe:<h4>
+<a href="https://sallysbakingaddiction.com/christmas-sugar-cookies/">
+    	<button>Sally's Baking Addiction</button>
+    </a>
+    <br>
+<a href="https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/">
+    	<button>Joyfoodsunshine</button>
+    </a>
+    <br>
+    <br>
+<img src="https://joyfoodsunshine.com/wp-content/uploads/2018/02/best-chocolate-chip-cookies-recipe-1.jpg" style="width:25%">
+<br>
+<br>
+<br>
+<h4>My Favourite Cake <3</h4>
+<p>While it may not seem very christmassy, I love making this cake and I make it year round. There are no eggs, and it's really easy to prepare!!</p>
+<a href="https://www.noracooks.com/vegan-chocolate-cake/">
+	<button>Nora Cooks'</button>
+</a>
+    <br>
+    <br>
+<img src="https://www.noracooks.com/wp-content/uploads/2018/07/IMG_8878.jpg" style="width: 20%">
+</div>
+
+<script>
+function changeTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
